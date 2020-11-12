@@ -7,7 +7,7 @@ var mani = document.getElementById("mani");
 var pritam = document.getElementById("pritam");
 
 amarta.innerHTML = 10;
-//banasri.innerHTML = 00;
+banasri.innerHTML = 10;
 //braja.innerHTML = 00;
 //deb.innerHTML = 00;
 //laxmi.innerHTML = 00;
