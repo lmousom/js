@@ -12,4 +12,4 @@ amarta.innerHTML = 10;
 //deb.innerHTML = 00;
 //laxmi.innerHTML = 00;
 mani.innerHTML = 10;
-//pritam.innerHTML = 00;
+pritam.innerHTML = 10;
