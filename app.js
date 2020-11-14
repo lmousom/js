@@ -8,7 +8,7 @@ var pritam = document.querySelector('#pritam');
 
 function renderCafe(doc){
     const amarta = document.querySelector('#amarta');
-    amarta.textContent = doc().data().marks;
+    amarta.textContent = doc('Jl9EFQrxIhCxQymkCVXt').data().marks;
    
 
     
