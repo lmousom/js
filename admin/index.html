@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Admin - JS Masterclass</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Student name">
+                <input type="number" name="marks" placeholder="Marks">
+                <button>Add Student</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+            <form id="one">
+                <p>Amarta Kundu</p>
+                <input type="number" name="marks" placeholder="Marks">
+                <button>Update</button>
+            </form>
+
+            <form id="two">
+                <p>Banasri Sen</p>
+                <input type="number" name="marks" placeholder="Marks">
+                <button>Update</button>
+            </form>
+            <form id="three">
+                <p>Brajeswar Singha</p>
+                <input type="number" name="marks" placeholder="Marks">
+                <button>Update</button>
+            </form>
+
+            <form id="four">
+                <p>Debkanta Ghosh</p>
+                <input type="number" name="marks" placeholder="Marks">
+                <button>Update</button>
+            </form>
+
+            <form id="five">
+                <p>Laxmikanta Mondal</p>
+                <input type="number" name="marks" placeholder="Marks">
+                <button>Update</button>
+            </form>
+
+            <form id="six">
+                <p>Manikanchan Layek</p>
+                <input type="number" name="marks" placeholder="Marks">
+                <button>Update</button>
+            </form>
+
+            <form id="seven">
+                <p>Pritam Maity</p>
+                <input type="number" name="marks" placeholder="Marks">
+                <button>Update</button>
+            </form>
+
+        </div>
+
+        <script>
+            // Initialize Firebase
+            var firebaseConfig = {
+    apiKey: "AIzaSyDmudV9C6OhZnHhFl_wOGQl_Ayf-5PRqu0",
+    authDomain: "js-admin-b61a5.firebaseapp.com",
+    databaseURL: "https://js-admin-b61a5.firebaseio.com",
+    projectId: "js-admin-b61a5",
+    storageBucket: "js-admin-b61a5.appspot.com",
+    messagingSenderId: "1043905377700",
+    appId: "1:1043905377700:web:4b6f53c3dfe3a9d9c43d31"
+  };
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
