@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Masterclass</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
 </head>
 <body>
     <header class="text-gray-500 bg-gray-900 body-font">
@@ -88,6 +90,22 @@
           </div>
         </div>
       </section>
+    <script>
+            // Initialize Firebase
+            var firebaseConfig = {
+    apiKey: "AIzaSyDmudV9C6OhZnHhFl_wOGQl_Ayf-5PRqu0",
+    authDomain: "js-admin-b61a5.firebaseapp.com",
+    databaseURL: "https://js-admin-b61a5.firebaseio.com",
+    projectId: "js-admin-b61a5",
+    storageBucket: "js-admin-b61a5.appspot.com",
+    messagingSenderId: "1043905377700",
+    appId: "1:1043905377700:web:4b6f53c3dfe3a9d9c43d31"
+  };
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+    
     <script src="app.js"></script>
 </body>
 </html>
