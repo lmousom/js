@@ -7,7 +7,7 @@ const laxmi = document.querySelector('#laxmi');
 const mani = document.querySelector('#mani');
 const pritam = document.querySelector('#pritam');
     
-    amarta.textContent = doc('Jl9EFQrxIhCxQymkCVXt').data().marks;
+    amarta.textContent = doc().data().marks;
    
 
     
