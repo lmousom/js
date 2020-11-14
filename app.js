@@ -22,6 +22,7 @@ db.collection('student-data').orderBy('marks').onSnapshot(snapshot => {
     let changes = snapshot.docChanges();
     changes.forEach(change => {
         console.log(change.doc.data());
+        amarta.textContent = doc('Jl9EFQrxIhCxQymkCVXt').data().marks;
         if(change.type == 'added'){
             renderCafe(change.doc);
         } else if (change.type == 'removed'){
