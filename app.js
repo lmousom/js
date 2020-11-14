@@ -11,7 +11,7 @@ var studentsRef = db.collection("student-data");
 
 var studentsRef = db.collection("student-data").doc("Jl9EFQrxIhCxQymkCVXt");
 
-docRef.get().then(function(doc) {
+studentsRef.get().then(function(doc) {
     if (doc.exists) {
         console.log("Document data:", doc.data());
     } else {
