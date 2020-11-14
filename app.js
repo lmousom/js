@@ -6,6 +6,12 @@ var laxmi = document.querySelector('#laxmi');
 var mani = document.querySelector('#mani');
 var pritam = document.querySelector('#pritam');
 
+db.collection('student-data').get().then(snapshot => {
+    snapshot.docs.forEach(doc => {
+        renderCafe(doc);
+    });
+});
+
 function renderCafe(doc){
     const amarta = document.querySelector('#amarta');
     amarta.textContent = doc('Jl9EFQrxIhCxQymkCVXt').data().marks;
@@ -17,8 +23,3 @@ function renderCafe(doc){
    
 }
 
-db.collection('student-data').get().then(snapshot => {
-    snapshot.docs.forEach(doc => {
-        renderCafe(doc);
-    });
-});
