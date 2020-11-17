@@ -2,7 +2,7 @@ const cafeList = document.querySelector('#cafe-list');
 const form = document.querySelector('#add-cafe-form');
 const update1 = document.querySelector('#one');
 const update2 = document.querySelector('#two');
-const update3 = document.querySelector('#three');
+
 const update4 = document.querySelector('#four');
 const update5 = document.querySelector('#five');
 const update6 = document.querySelector('#six');
@@ -58,14 +58,7 @@ function renderCafe(doc){
         
     });
 
-    update3.addEventListener('submit', (e) => {
-        e.preventDefault();
-        db.collection('student-data').doc('EZYQNyYX0YTaJH0lXjqf').update({
-            marks: update3.marks.value
-        });
-        
-        
-    });
+   
 
     update4.addEventListener('submit', (e) => {
         e.preventDefault();
